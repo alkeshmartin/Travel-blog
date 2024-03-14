@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munnar-Travel blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Poppins:wght@300&family=Roboto+Condensed&display=swap');
+</style>
+
+<body>
+    <div class="main-container">
+        <header class="headerclass">
+            <img src="data:image/jpeg;base64,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"
+                alt="" class="avatar">
+            <nav class="navbar">
+                <ul class="navlinks">
+                    <li><a href="#home" class="links">Home</a></li>
+                    <li><a href="#about" class="links">About Munnar</a></li>
+                    <li><a href="#skills" class="links">What to do</a></li>
+                    <li><a href="#contact-us" class="links">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Home part-->
+
+        <section id="home">
+            <div class="title">
+                <h1 class="title-h1">WELCOME TO<span class="firstname">MUNNAR </span></h1>
+                <p>
+                    "Welcome to Munnar Bliss: Your Gateway to Paradise in Kerala!<br><br>
+                    
+                    Nestled amidst the lush Western Ghats of India, Munnar beckons you with its enchanting beauty and tranquil serenity. Imagine waking up to the aroma of tea plantations, gazing at rolling hills covered in a velvety green carpet, and sipping on the finest chai as you soak in the awe-inspiring landscapes. This is the magic of Munnar, and we're here to make your dream vacation a reality.<br><br>
+                    
+                    At Munnar Bliss, we curate unforgettable trips to this slice of paradise in God's Own Country, Kerala. Whether you're an adventure seeker, a nature enthusiast, or simply looking for a peaceful escape, our tailored packages cater to every traveler's desires. From tea plantation tours to adventurous treks, from luxury stays to cozy homestays, we offer a diverse range of experiences to suit your preferences.<br><br>
+                    
+                    Our team of experienced guides and travel experts are passionate about Munnar, and their local knowledge ensures you'll discover the hidden gems and authentic experiences that make this destination truly special. We take care of all the details, so you can focus on creating lasting memories with your loved ones.<br><br>
+                    
+                    Join us on a journey to Munnar, where the air is crisp, the landscapes are breathtaking, and the hospitality is heartwarming. Let Munnar Bliss be your trusted partner in crafting the perfect getaway to this captivating destination.
+                    <br><br>
+                    Explore our packages, get lost in the allure of Munnar, and embark on an unforgettable adventure with us. Your Munnar dream awaits!"
+                    </p>
+                <a class="download" href="../MEARN AUG B2 SULTHAN/sample.pdf" target="_blank">BOOK NOW!</a>
+                </a>
+            </div>
+            <!--<div class="images">
+                <img id="shape" src="../images/3.png" alt="">
+                <img id="girl" src="../images/2.png" alt="">
+            </div>-->
+
+        </section>
+
+        <!--about part-->
+
+        <section id="about">
+            <div class="heading">
+                <h2>About Munnar</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://www.munnar.holiday/munnartourism/wp-content/uploads/2017/11/neelakurinji-flowers-munnar-next-bloom-800x385.jpg" alt="">
+                </div>
+                <div class="about-details">
+                    <p>Munnar, with sprawling tea plantations, charming towns, winding lanes and exotic flora, is a
+                        popular resort town in Kerala. Without a doubt, it is the most visited tourist destination in
+                        Kerala.<br> <br> Munnar is the largest tea-growing region and one of the best hill stations in South
+                        India. This quaint town, located in the Western Ghats of Kerala is set at an altitude of 6000
+                        feet. Once known as the High Range of Travancore, Munnar used to be the summer resort of the
+                        Britishers during colonial times. <br> <br> Munnar is a spectacular spot in Kerala that is known for its
+                        green belt of lush forests and unending expanse of tea estates. It is also known to house some
+                        endangered species like Neelakurinji and Nilgiri Tahr. Its pristine valleys, mountains, and
+                        exotic varieties of flora and fauna make it the most sought after hill station in Kerala.
+                        Mattupetti, Periavaru, and Nallathanni the three rivers flowing through this region make it
+                        even more popular attracting thousands of visitors every year towards it.
+
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="details">
+                <a href="https://maps.app.goo.gl/W94QrtHYLbK18iht9"><p><i class="fa-solid fa-location-dot"></i> Location</p></a>
+            </div>
+        </section>
+
+        <!--Skills-->
+
+        <section id="skills">
+            <div class="heading">
+                <h2>To Do</h2>
+                <h4>Things to do in Munnar</h4>
+            </div>
+            <!--<div class="skills-details">
+                <div class="progress-bar">
+                    <div class="bar-container">
+                        <h3>HTML</h3>
+                        <span>95%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar html-bar"></div>
+                    </div>
+                    <div class="bar-container">
+                        <h3>CSS</h3>
+                        <span>90%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar css-bar"></div>
+                    </div>
+                    <div class="bar-container">
+                        <h3>ANGULAR</h3>
+                        <span>95%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar angular-bar"></div>
+                    </div>
+                    <div class="bar-container">
+                        <h3>REACT</h3>
+                        <span>95%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar react-bar"></div>
+                    </div>
+                </div>
+                <div class="skills-img">
+                    <img src="../images/5.avif" alt="image">
+                </div>-->
+
+                <!--<div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/0e/27/26.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Spend a morning hiking among tea pinnations with a professional guide with this tour. You'll make your way through forests, spice farms, and fields of tea, with a stop for a snack along the way. On clear days, you'll even get the chance to see Anaimudi, South India's highest peak.
+                    </p>
+                    <a href="#" class="btn btn-primary"><button>Reserve</button></a>
+                    </div>
+                  </div>
+            </div>-->
+            <div class="card-group">
+                <div class="card">
+                    
+                  <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/71/39/22.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Trekking</h4>
+                    <p class="card-text">Spend a morning hiking among tea pinnations with a professional guide with this tour. You'll make your way through forests, spice farms, and fields of tea, with a stop for a snack along the way. On clear days, you'll even get the chance to see Anaimudi, South India's highest peak.</p>
+                    <button>Reserve</button><br><br>
+                  </div>
+                </div>
+                <div class="card">
+                   
+                  <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/ae/d0/35.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Wild Elephant Village( Anakulam) life tour
+                    </h4>
+                    <p class="card-text">Get the chance to see wild elephant herds in their natural environment on this day tour from Munnar. You'll visit Anakulam, known as an area where elephants congregate, and hopefully see large herds from your vehicle. You'll also visit a few different waterfalls, with the chance to take a dip in one of the falls if you choose.
+                    </p>
+                    <button>Reserve</button><br><br>
+
+                  </div>
+
+                </div>
+                <div class="card">
+                    
+                  <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/79/cc/2f.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Munnar Tea-trail Tour
+                    </h4>
+                    <p class="card-text">Tea-trail is a tour that gives knowledge as well as the facts,history of Munnar and its habitat within that we can feel the beauty of Munnar 
+                    </p>
+                    <button>Reserve</button><br><br>
+
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!--Contact us-->
+        <section id="contact-us">
+            <div class="heading">
+                <h5>FOR BOOKING</h5>
+                <h4>Connect with me</h4>
+            </div>
+            <div class="icons-set">
+                <!--<div class="icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>-->
+                <div class="icons">
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <!--<div class="icons">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>-->
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p>© Copyright 2018 - Travel Blog clone. All rights reserved.</p>
+        </footer>
+        <div class="up-arrow">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

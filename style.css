@@ -1,0 +1,226 @@
+/* header part */
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.headerclass
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar
+    {
+        width: 120px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+.navlinks
+    {
+        display: flex;
+        margin-right: 50px;
+        list-style-type: none;
+    }
+.links
+    {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding-right: 10px;
+
+    }
+.links:hover
+    {
+        color: orangered;
+        cursor: pointer;
+        
+    }
+
+
+    * {box-sizing:border-box}
+
+/*Home section*/
+
+#home
+    {
+        margin-top: 10px;
+    }
+    .title
+    {
+        margin-left: 8%;
+        margin-top: 13%;
+    }
+    .title-h1
+    {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .firstname
+    {
+        color: rgb(61, 244, 61);
+    }
+    .download
+    {
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        display: inline-block;
+        border-radius: 15px;
+        font-weight: lighter; 
+    }
+    .images
+    {
+        position: absolute;
+        width: 45%;
+        height: 80%;
+        bottom: 0px;
+        right: 30px;
+    }
+    .images img
+    {
+        position: absolute;
+        height: 100%;
+        left: 50%;
+        bottom: 0px;
+        transform: translate(-50%);
+        transition: bottom 1s, left 1s;
+    }
+    .images img
+    {
+        position: absolute;
+        height: 100%;
+        left: 50%;
+        bottom: 0px;
+        transform: translate(-50%);
+        transition: bottom 1s, left 1s;
+    }
+    .images:hover #shape
+    {
+        bottom: 40px;
+    }
+    .images:hover #girl
+    {
+        left: 40%;
+    }
+    /*About me*/
+#about
+    {
+        margin-top: 300px;
+    }
+    .heading
+    {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .heading h4
+    {
+        color: green;
+    }
+    .about-content
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+        gap: 2rem;
+    }
+
+.details
+    {
+        margin-top: -100px;
+        margin-left: 840px;
+    }
+    a
+    {
+        text-decoration: none;
+    }
+.img
+{
+    width: fit-content;
+}
+
+    /*Skills*/
+#skills
+    {
+        margin-top: 250px;
+    }
+    .skills-details
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+        gap: 10px;   
+    }
+    .card-img-top
+    {
+        width: 18rem;
+    }
+    button
+    {
+        color: rgb(5, 4, 4);
+        background-color: rgb(243, 231, 10);
+        border-radius: 20px;
+        border: none;
+    }
+
+    /*contact us*/
+    #contact-us
+    {
+        margin-top: 250px;
+    }
+    .icons-set
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        align-items: center;
+    }
+    .icons
+    {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .icons i
+    {
+        font-size: 30px;
+        color: black;
+        margin-left: 10px;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons:hover
+    {
+        background-image: linear-gradient(to bottom right, yellow, orange);
+        animation: shake 1s;
+    }
+    @keyframes shake
+        {
+            10% {transform: rotate(15deg);}
+       
+            20%{transform: rotate(-15deg);}
+        }
+    .footer
+    {
+        text-align: center;
+    }
+.up-arrow
+{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    
+}
+body
+{
+    background-image: url(https://www.nikkisplate.com/wp-content/uploads/2022/09/Sage-Green-Aesthetic-Wallpaper-16.png);
+    background-attachment: fixed;
+    font-weight: bold;
+}
